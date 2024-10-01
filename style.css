@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #615c75;
+  height: 100dvh;
+}
+main {
+  background: #2b2738;
+  width: 98%;
+  height: 97%;
+  padding: 7px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+main > div {
+  border-radius: 10px;
+}
+/* side bar */
+.sidebar {
+  grid-area: 1 / 1 / 6 / 2;
+  background: #6e54b5;
+}
+
+.logo {
+  width: 90%;
+  margin: 5px 5% 20px 5%;
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+}
+.groupone,
+.grouptwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  gap: 20px;
+}
+
+.icon {
+  width: 100%;
+}
+
+/* ----------------------- */
+.searchbar {
+  grid-area: 1 / 2 / 2 / 3;
+  background: #6e54b5;
+}
+.chatcontainer {
+  grid-area: 2 / 2 / 6 / 3;
+  background: #3b364c;
+}
+.currentuserheader {
+  grid-area: 1 / 3 / 2 / 5;
+  background: #6e54b5;
+}
+.currentusermain {
+  grid-area: 2 / 3 / 6 / 5;
+  background: #49435d;
+}
+.contactinfo {
+  grid-area: 1 / 5 / 6 / 6;
+  background: #3b364c;
+}
