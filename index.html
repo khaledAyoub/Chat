@@ -8,7 +8,8 @@
   </head>
   <body>
     <main>
-      <div class="sidebar maindivs">
+      <!-- side bar -->
+      <div class="sidebar">
         <img src="./images/logo.avif" alt="Logo" class="logo" />
         <div class="icons">
           <div class="groupone">
@@ -178,11 +179,312 @@
           </div>
         </div>
       </div>
-      <div class="searchbar maindivs">div2</div>
-      <div class="chatcontainer maindivs">div3</div>
-      <div class="currentuserheader maindivs">div4</div>
-      <div class="currentusermain maindivs">div5</div>
-      <div class="contactinfo maindivs">div6</div>
+
+      <!-- search bar -->
+      <div class="searchbar">
+        <!-- search input -->
+        <input type="text" placeholder="Search for users" />
+        <svg
+          class="searchicon"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.5945 20.5824L30 30M23.7778 12.8889C23.7778 18.9027 18.9027 23.7778 12.8889 23.7778C6.87513 23.7778 2 18.9027 2 12.8889C2 6.87513 6.87513 2 12.8889 2C18.9027 2 23.7778 6.87513 23.7778 12.8889Z"
+            stroke="#AAAAAA"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <!-- chat container -->
+      <div class="chatcontainer">
+        <!-- single chat card -->
+        <div class="singlechat selectedchat">
+          <img src="./images/pfp.jpeg" alt="PFP" class="chatimage" />
+          <div class="chatinfo">
+            <h2>User Name</h2>
+            <p>A cropped messages from the last version between you and him</p>
+          </div>
+          <h3 class="missedmessages">6</h3>
+        </div>
+        <div class="singlechat">
+          <img src="./images/pfp.jpeg" alt="PFP" class="chatimage" />
+          <div class="chatinfo">
+            <h2>User Name</h2>
+            <p>A cropped messages from the last version between you and him</p>
+          </div>
+          <h3 class="missedmessages">6</h3>
+        </div>
+        <div class="singlechat">
+          <img src="./images/pfp.jpeg" alt="PFP" class="chatimage" />
+          <div class="chatinfo">
+            <h2>User Name</h2>
+            <p>A cropped messages from the last version between you and him</p>
+          </div>
+          <h3 class="missedmessages">6</h3>
+        </div>
+        <div class="singlechat">
+          <img src="./images/pfp.jpeg" alt="PFP" class="chatimage" />
+          <div class="chatinfo">
+            <h2>User Name</h2>
+            <p>A cropped messages from the last version between you and him</p>
+          </div>
+          <h3 class="missedmessages">6</h3>
+        </div>
+        <div class="singlechat">
+          <img src="./images/pfp.jpeg" alt="PFP" class="chatimage" />
+          <div class="chatinfo">
+            <h2>User Name</h2>
+            <p>A cropped messages from the last version between you and him</p>
+          </div>
+          <h3 class="missedmessages">6</h3>
+        </div>
+        <div class="singlechat">
+          <img src="./images/pfp.jpeg" alt="PFP" class="chatimage" />
+          <div class="chatinfo">
+            <h2>User Name</h2>
+            <p>A cropped messages from the last version between you and him</p>
+          </div>
+          <h3 class="missedmessages">6</h3>
+        </div>
+        <div class="singlechat">
+          <img src="./images/pfp.jpeg" alt="PFP" class="chatimage" />
+          <div class="chatinfo">
+            <h2>User Name</h2>
+            <p>A cropped messages from the last version between you and him</p>
+          </div>
+          <h3 class="missedmessages">6</h3>
+        </div>
+      </div>
+
+      <!-- current user header -->
+      <div class="currentuserheader">
+        <div class="headerleft">
+          <img src="./images/pfp.jpeg" alt="PFP" class="currentuserimage" />
+          <h2>User Name</h2>
+        </div>
+        <svg
+          class="headerright"
+          viewBox="0 0 10 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 27.4055C1 29.3907 2.60925 31 4.59449 31C6.57972 31 8.18898 29.3907 8.18898 27.4055C8.18898 25.4203 6.57972 23.811 4.59449 23.811C2.60925 23.811 1 25.4203 1 27.4055Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M1 16C1 17.9852 2.60925 19.5945 4.59449 19.5945C6.57972 19.5945 8.18898 17.9852 8.18898 16C8.18898 14.0148 6.57972 12.4055 4.59449 12.4055C2.60925 12.4055 1 14.0148 1 16Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M1 4.59449C1 6.57965 2.60925 8.18898 4.59449 8.18898C6.57972 8.18898 8.18898 6.57965 8.18898 4.59449C8.18898 2.60932 6.57972 1 4.59449 1C2.60925 1 1 2.60932 1 4.59449Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <!-- main chat part -->
+      <div class="currentusermain">
+        <div class="message sendmessage">
+          <p class="messagecontent">
+            message i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+            i i i i i i i i i i i i i i
+          </p>
+          <div class="status">
+            <p class="time">12:30am</p>
+            <svg
+              class="right"
+              viewBox="0 0 74 53"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="rightpath"
+                d="M1.9134 29.0301L23.6557 51.238C24.8922 52.5008 26.9181 52.5224 28.1809 51.286C29.4437 50.0496 29.4653 48.0236 28.2289 46.7608L6.48653 24.5529C5.25012 23.2901 3.22419 23.2685 1.96137 24.5049C0.698561 25.7413 0.676997 27.7672 1.9134 29.0301Z"
+              />
+              <path
+                d="M28.2283 51.2385L72.086 6.43848C73.3222 5.17567 73.3008 3.14957 72.0378 1.91332C70.7749 0.677075 68.7489 0.698483 67.5127 1.96145L23.655 46.7615C22.4188 48.0243 22.4402 50.0504 23.7031 51.2866C24.9661 52.5229 26.9921 52.5015 28.2283 51.2385Z"
+                class="rightpath"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="message sendmessage last">
+          <p class="messagecontent">message</p>
+          <div class="status">
+            <p class="time">12:30am</p>
+            <svg
+              class="right"
+              viewBox="0 0 74 53"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="rightpath"
+                d="M1.9134 29.0301L23.6557 51.238C24.8922 52.5008 26.9181 52.5224 28.1809 51.286C29.4437 50.0496 29.4653 48.0236 28.2289 46.7608L6.48653 24.5529C5.25012 23.2901 3.22419 23.2685 1.96137 24.5049C0.698561 25.7413 0.676997 27.7672 1.9134 29.0301Z"
+              />
+              <path
+                d="M28.2283 51.2385L72.086 6.43848C73.3222 5.17567 73.3008 3.14957 72.0378 1.91332C70.7749 0.677075 68.7489 0.698483 67.5127 1.96145L23.655 46.7615C22.4188 48.0243 22.4402 50.0504 23.7031 51.2866C24.9661 52.5229 26.9921 52.5015 28.2283 51.2385Z"
+                class="rightpath"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="message recivemessage">
+          <p class="messagecontent">
+            message i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+            i i i i i i i i i i i i i i
+          </p>
+          <div class="status">
+            <p class="time">12:30am</p>
+            <svg
+              class="right"
+              viewBox="0 0 74 53"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="rightpath"
+                d="M1.9134 29.0301L23.6557 51.238C24.8922 52.5008 26.9181 52.5224 28.1809 51.286C29.4437 50.0496 29.4653 48.0236 28.2289 46.7608L6.48653 24.5529C5.25012 23.2901 3.22419 23.2685 1.96137 24.5049C0.698561 25.7413 0.676997 27.7672 1.9134 29.0301Z"
+              />
+              <path
+                d="M28.2283 51.2385L72.086 6.43848C73.3222 5.17567 73.3008 3.14957 72.0378 1.91332C70.7749 0.677075 68.7489 0.698483 67.5127 1.96145L23.655 46.7615C22.4188 48.0243 22.4402 50.0504 23.7031 51.2866C24.9661 52.5229 26.9921 52.5015 28.2283 51.2385Z"
+                class="rightpath"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="messagesending">
+          <svg
+            class="messageicon"
+            viewBox="0 0 38 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_26_376)">
+              <path
+                d="M6.4089 37.392C4.79865 37.392 3.25134 36.7258 2.01871 35.492C-0.713723 32.7501 -0.713723 28.291 2.01753 25.5502L23.3284 2.92006C26.6534 -0.409693 31.7466 -0.111631 35.4635 3.61118C37.1283 5.27962 38.0629 7.68549 38.0285 10.2125C37.994 12.7146 37.0167 15.1086 35.3459 16.7806L19.2398 33.9269C18.7922 34.4066 18.0393 34.4292 17.5619 33.9791C17.0845 33.5291 17.062 32.775 17.5108 32.2964L33.6418 15.124C34.9041 13.8593 35.6273 12.0662 35.6546 10.1792C35.682 8.29231 34.9991 6.50987 33.7855 5.29387C31.5055 3.00912 27.7934 1.81212 25.0336 4.57899L3.72396 27.2092C1.89165 29.0462 1.89284 31.9972 3.70021 33.8093C4.54809 34.6584 5.55509 35.0716 6.62621 35.0063C7.68665 34.941 8.77678 34.3983 9.6959 33.4768L26.6522 15.4292C27.2661 14.8141 28.5023 13.3036 27.2448 12.0436C26.5335 11.3299 26.0335 11.3751 25.8685 11.3881C25.3994 11.4297 24.8496 11.7551 24.2808 12.3262L11.5175 25.8994C11.0663 26.3791 10.3146 26.4017 9.8384 25.9504C9.36103 25.5004 9.33846 24.7463 9.78853 24.2689L22.5743 10.6697C23.579 9.65912 24.6073 9.11168 25.6535 9.01787C26.4705 8.94543 27.6842 9.11881 28.9227 10.3609C30.761 12.2027 30.5318 14.9043 28.3563 17.0857L11.4 35.1322C10.0462 36.4907 8.41103 37.2792 6.77109 37.3801C6.65115 37.3884 6.52884 37.392 6.4089 37.392Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_26_376">
+                <rect width="38" height="38" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <input type="text" placeholder="Message" class="messageinput" />
+          <svg
+            class="messageicon"
+            viewBox="0 0 47 47"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.1063 24.0053H10.8027M10.454 25.6607L8.42126 31.8934C7.30795 35.3069 6.7513 37.0136 7.15078 38.0646C7.49768 38.9774 8.24276 39.6693 9.16216 39.9329C10.2209 40.236 11.8199 39.4974 15.018 38.0203L35.5209 28.5501C38.6425 27.1081 40.2033 26.3873 40.6856 25.3858C41.1048 24.5157 41.1048 23.4947 40.6856 22.6246C40.2033 21.6232 38.6425 20.9023 35.5209 19.4604L14.9827 9.97389C11.7942 8.50116 10.2 7.76479 9.14231 8.06687C8.22379 8.3292 7.47878 9.01935 7.13067 9.93041C6.72981 10.9795 7.28052 12.6825 8.38195 16.0887L10.4579 22.5087C10.6471 23.0937 10.7417 23.3863 10.779 23.6853C10.8122 23.9509 10.8118 24.2196 10.778 24.485C10.7399 24.784 10.6446 25.0762 10.454 25.6607Z"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            class="messageicon"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_26_380)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.5071 2.16832C17.3223 2.16832 13.918 5.57255 13.918 9.75739V20.5989C13.918 24.7838 17.3223 28.188 21.5071 28.188C25.692 28.188 29.0962 24.7838 29.0962 20.5989V9.75742C29.0962 5.57258 25.692 2.16832 21.5071 2.16832ZM9.58141 15.9007V21.1285C9.58141 27.7028 14.9328 33.0542 21.5071 33.0542C28.0814 33.0542 33.4328 27.7028 33.4328 21.1285V15.9007H35.6011V21.1285C35.6011 28.5349 29.858 34.6257 22.5914 35.1812L22.5913 40.8317H28.012V43H15.0022V40.8317H20.4229L20.4228 35.1812C13.1562 34.6257 7.41309 28.5349 7.41309 21.1285V15.9007H9.58141ZM21.5071 0C26.8867 0 31.2645 4.37783 31.2645 9.75742V20.5989C31.2645 25.9785 26.8867 30.3564 21.5071 30.3564C16.1275 30.3564 11.7497 25.9785 11.7497 20.5989V9.75742C11.7497 4.37783 16.1275 0 21.5071 0Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_26_380">
+                <rect width="43" height="43" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- contact information -->
+      <div class="contactinfo">
+        <img src="./images/banner.jpg" alt="Banner" class="banner" />
+        <div class="pfpnameabout">
+          <img src="./images/pfp.jpeg" alt="PFP" class="contactinfoimage" />
+          <h2>User Name</h2>
+          <h4>About me :)</h4>
+        </div>
+        <div class="contactpersonalinfo">
+          <h3>Last online</h3>
+          <p>today 2:16 am</p>
+          <h3>Email</h3>
+          <p>Example@gmail.com</p>
+          <h3>Phone</h3>
+          <p>01202089622</p>
+        </div>
+        <div class="media">
+          <h2>Media</h2>
+          <div class="mediacard">
+            <h3>Photos</h3>
+            <p>10</p>
+          </div>
+          <div class="mediacard">
+            <h3>Videos</h3>
+            <p>10</p>
+          </div>
+          <div class="mediacard">
+            <h3>Documents</h3>
+            <p>10</p>
+          </div>
+        </div>
+        <button class="blockbtn">Block</button>
+
+        <svg
+          class="close"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_144_253)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M26.8752 3.11996C25.9368 2.18396 24.4164 2.18396 23.4768 3.11996L14.9808 11.6161L6.48475 3.11996C5.54635 2.18396 4.02475 2.18396 3.08635 3.11996C2.14795 4.06796 2.14795 5.57992 3.08635 6.52792L11.5824 15.024L3.08635 23.52C2.14795 24.456 2.14795 25.9801 3.08635 26.9161C4.02475 27.8521 5.54635 27.8521 6.48475 26.9161L14.9808 18.42L23.4768 26.9161C24.4164 27.8521 25.9368 27.8521 26.8752 26.9161C27.8148 25.9801 27.8148 24.456 26.8752 23.52L18.3792 15.024L26.8752 6.52792C27.8148 5.57992 27.8148 4.06796 26.8752 3.11996ZM21.7776 15.024L28.5755 21.8161C30.4511 23.6881 30.4511 26.736 28.5755 28.608C26.6975 30.492 23.6544 30.492 21.7776 28.608L14.9808 21.8161L8.18397 28.608C6.30837 30.492 3.26517 30.492 1.38717 28.608C-0.488431 26.736 -0.488431 23.6881 1.38717 21.8161L8.18397 15.024L1.38717 8.21996C-0.488431 6.34796 -0.488431 3.29992 1.38717 1.42792C3.26517 -0.456077 6.30837 -0.456077 8.18397 1.42792L14.9808 8.21996L21.7776 1.42792C23.6544 -0.456077 26.6975 -0.456077 28.5755 1.42792C30.4511 3.29992 30.4511 6.34796 28.5755 8.21996L21.7776 15.024Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_144_253">
+              <rect
+                width="30"
+                height="30"
+                fill="white"
+                transform="matrix(1 0 0 -1 0 30)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
     </main>
   </body>
 </html>
